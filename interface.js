@@ -68,10 +68,8 @@ $ ( document ).ready(function () {
     });
   });
 
-
   $(window).unload(function () {
     var currentTemp = thermostat.temperature;
-    console.log(currentTemp);
     $.ajax({
       type: "POST",
       url: "http://localhost:4567/temperature",

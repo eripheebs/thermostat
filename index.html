@@ -5,24 +5,32 @@
   <script src="jquery.js"></script>
   <script src="src/thermostat.js"></script>
   <script src="interface.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Abel">
   <link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+  <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <h1>Temperature: <span id="temperature"></span>&deg;C</h1>
-  <h2>Power Saving Mode: <span id="psm"></span></h2>
-  <button id="increase">+</button>
-  <button id="decrease">-</button>
-  <button id="reset">reset</button>
-  <button id="psm-on">power save on</button>
-  <button id="psm-off">power save off</button>
-  <br></br>
+<div class="controls">
+  <div class="screen">
+    <h1>Temperature: <span id="temperature"></span>&deg;C</h1>
+    <h2>Power Saving Mode: <span id="psm"></span></h2>
+  </div>
+  <button class="btn" id="increase">+</button>
+  <button class="btn" id="decrease">-</button>
+  <button class="btn" id="reset">reset</button>
+  <button class="btn" id="psm-on">power save on</button>
+  <button class="btn" id="psm-off">power save off</button>
+</div>
   <section>
-    <form id="select-city">
-      <input id="current-city" type="text" placeholder="Enter a city"></input>
-      <input type="submit"></input>
-    </form>
-    <br>
-    Current temperature in <span id="city-name"></span> is <span id="current-temperature"></span>&deg;C
+    <div class="weather">
+      <form id="select-city">
+        <input class="field" id="current-city" type="text" placeholder="Enter a city"></input>
+        <input class="btn" type="submit"></input>
+      </form>
+      <div class="weather-screen">
+        Current temperature in <span id="city-name"></span> is <span id="current-temperature"></span>&deg;C
+      </div>
+  </div>
   </section>
 
   <p>

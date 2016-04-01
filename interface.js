@@ -1,13 +1,13 @@
 $ ( document ).ready(function () {
   var thermostat = new Thermostat()
 
-  $('#city-name').text("CATLAND");
+  $('#city-name').text("the laboratory");
 
-  $('#current-temperature').text("100000000");
+  $('#current-temperature').text("25");
 
-  $ ("html").mouseenter(function () {
-    $(this).css("cursor", "url(http://orig14.deviantart.net/1586/f/2011/191/2/1/bda__kitty_cat_icon_by_sabakugaara-d3lnz58.gif), auto");
-  });
+  // $ ("html").mouseenter(function () {
+  //   $(this).css("cursor", "url(http://orig14.deviantart.net/1586/f/2011/191/2/1/bda__kitty_cat_icon_by_sabakugaara-d3lnz58.gif), auto");
+  // });
 
   $ ( "#temperature" ).text(thermostat.temperature);
 
@@ -18,13 +18,13 @@ $ ( document ).ready(function () {
   $ ( "#increase" ).click(function () {
     thermostat.increase();
     updateTemperature();
-    $ ("img").attr("src", "https://media.giphy.com/media/ffWXNxlfEcrHG/giphy.gif");
+    // $ ("img").attr("src", "https://media.giphy.com/media/ffWXNxlfEcrHG/giphy.gif");
   });
 
   $ ( "#decrease" ).click(function () {
     thermostat.decrease();
     updateTemperature();
-    $ ("img").attr("src", "https://s-media-cache-ak0.pinimg.com/736x/4b/1f/89/4b1f8997747f120e3de8b0f076d6719f.jpg");
+    // $ ("img").attr("src", "https://s-media-cache-ak0.pinimg.com/736x/4b/1f/89/4b1f8997747f120e3de8b0f076d6719f.jpg");
   });
 
   $ ( "#reset" ).click(function () {

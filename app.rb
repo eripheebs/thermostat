@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require_relative 'temperature.rb'
-require 'json'
 
 class Thermostat < Sinatra::Base
   set :public_folder, proc { File.join(root) }
